@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты — ЭкранПро</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1170/1170688.png" alt="Логотип ЭкранПро" width="32" height="32">
+                    ЭкранПро
+                </a>
+                <nav>
+                    <ul class="menu">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="comparison.html">Сравнение</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <h1>Контакты</h1>
+
+            <section class="contacts-info">
+                <p><strong>Адрес:</strong> г. ***, ул. ***, д. 1, стр. 2</p>
+                <p><strong>Телефон:</strong> +7 (***) ***-**-**</p>
+                <p><strong>Режим работы:</strong> Пн–Вс с 10:00 до 20:00</p>
+                <p><strong>Email:</strong> ioann.kovyazin@mail.ru</p>
+                <p class="slogan">«ЭкранПро — ваш взгляд в будущее!»</p>
+            </section>
+
+            <section class="feedback-form">
+                <h2>Форма обратной связи</h2>
+                <form id="contact-form" action="#" method="post">
+                    <label for="contact-name">Ваше имя:</label>
+                    <input type="text" id="contact-name" name="name" required placeholder="Иван Иванов">
+
+                    <label for="contact-email">Email:</label>
+                    <input type="email" id="contact-email" name="email" required placeholder="ivan@example.com">
+
+                    <label for="contact-message">Сообщение:</label>
+                    <textarea id="contact-message" name="message" rows="5" required placeholder="Ваш вопрос..."></textarea>
+
+                    <button type="submit" class="btn">Отправить</button>
+                </form>
+                <!-- Сюда JavaScript выведет сообщение об успехе -->
+                <div id="form-result"></div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 ЭкранПро. Все права защищены.</p>
+            <p>Телефон: +7 (***) ***-**-**</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

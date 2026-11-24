@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход — ЭкранПро</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1170/1170688.png" alt="Логотип" width="32" height="32"> ЭкранПро
+                </a>
+                <nav>
+                    <ul class="menu">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="comparison.html">Сравнение</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Вход в аккаунт</h1>
+            <section class="feedback-form" style="max-width: 400px;">
+                <form id="login-form">
+                    <label for="login-username">Имя пользователя:</label>
+                    <input type="text" id="login-username" required>
+
+                    <label for="login-password">Пароль:</label>
+                    <input type="password" id="login-password" required>
+
+                    <button type="submit" class="btn">Войти</button>
+                </form>
+                <div id="login-result"></div>
+                <p style="margin-top: 15px;">Нет аккаунта? <a href="register.html">Зарегистрироваться</a></p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 ЭкранПро. Все права защищены.</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

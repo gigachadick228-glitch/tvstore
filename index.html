@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЭкранПро — Магазин телевизоров</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ШАПКА САЙТА -->
+    <header>
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1170/1170688.png" alt="Логотип ЭкранПро" width="32" height="32">
+                    ЭкранПро
+                </a>
+                <nav>
+                    <ul class="menu">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="comparison.html">Сравнение</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- ОСНОВНОЕ СОДЕРЖИМОЕ -->
+    <main>
+        <div class="container">
+
+            <h1>Телевизоры для любого интерьера и бюджета</h1>
+
+            <!-- Блок приветствия -->
+            <section class="hero">
+                <p>
+                    Подберём идеальный телевизор по диагонали и площади вашей комнаты.
+                    Уникальный калькулятор подбора — только у нас!
+                </p>
+
+                <!-- Форма подбора телевизора по площади комнаты -->
+                <form id="room-form" class="picker-form">
+                    <label for="room-area">Площадь вашей комнаты (м²):</label>
+                    <input type="number" id="room-area" placeholder="Например, 20" min="1" max="200" required>
+                    <button type="submit" class="btn">Подобрать телевизор</button>
+                </form>
+
+                <!-- Сюда JavaScript будет выводить результат подбора -->
+                <div id="tv-result"></div>
+
+                <a href="catalog.html" class="btn">Перейти в каталог</a>
+            </section>
+
+            <!-- Популярные модели -->
+            <section class="featured">
+                <h2>Популярные модели</h2>
+                <div class="grid">
+
+                    <article class="card">
+                        <img src="images/q.webp" alt="Телевизор Samsung Crystal UHD 55 дюймов">
+                        <h3>Samsung Crystal UHD 55"</h3>
+                        <p>Для гостиной 20–25 м²</p>
+                        <a href="item.html" class="btn">Подробнее</a>
+                    </article>
+
+                    <article class="card">
+                        <img src="images/w.webp" alt="Телевизор LG NanoCell 43 дюйма">
+                        <h3>LG NanoCell 43"</h3>
+                        <p>Для спальни 12–15 м²</p>
+                        <a href="item.html" class="btn">Подробнее</a>
+                    </article>
+
+                    <article class="card">
+                        <img src="images/e.webp" alt="Телевизор Sony Bravia 65 дюймов">
+                        <h3>Sony Bravia 65"</h3>
+                        <p>Для большой гостиной 30+ м²</p>
+                        <a href="item.html" class="btn">Подробнее</a>
+                    </article>
+
+                    <article class="card">
+                        <img src="images/r.webp" alt="Телевизор Philips Ambilight 50 дюймов">
+                        <h3>Philips Ambilight 50"</h3>
+                        <p>Для гостиной 18–22 м²</p>
+                        <a href="item.html" class="btn">Подробнее</a>
+                    </article>
+
+                    <article class="card">
+                        <img src="images/t.webp" alt="Телевизор TCL 32 дюйма">
+                        <h3>TCL 32"</h3>
+                        <p>Для кухни или маленькой комнаты</p>
+                        <a href="item.html" class="btn">Подробнее</a>
+                    </article>
+
+                    <article class="card">
+                        <img src="images/y.webp" alt="Телевизор Hisense 58 дюймов">
+                        <h3>Hisense 58"</h3>
+                        <p>Для гостиной 22–28 м²</p>
+                        <a href="item.html" class="btn">Подробнее</a>
+                    </article>
+
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- ПОДВАЛ САЙТА -->
+    <footer>
+        <div class="container">
+            <p>© 2026 ЭкранПро. Все права защищены.</p>
+            <p>Телефон: +7 (***) ***-**-**</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

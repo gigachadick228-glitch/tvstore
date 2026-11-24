@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог телевизоров — ЭкранПро</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1170/1170688.png" alt="Логотип ЭкранПро" width="32" height="32">
+                    ЭкранПро
+                </a>
+                <nav>
+                    <ul class="menu">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="comparison.html">Сравнение (<span id="compare-counter">0</span>)</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <h1>Каталог телевизоров</h1>
+
+            <!-- Фильтры -->
+            <section class="filters">
+                <h2>Фильтры</h2>
+                <form id="catalog-filter">
+                    <label for="filter-diag">
+                        Диагональ:
+                        <select id="filter-diag">
+                            <option value="any">Любая</option>
+                            <option value="32">32 дюйма</option>
+                            <option value="40">40 дюймов</option>
+                            <option value="43">43 дюйма</option>
+                            <option value="50">50 дюймов</option>
+                            <option value="55">55 дюймов</option>
+                            <option value="65">65 дюймов</option>
+                        </select>
+                    </label>
+
+                    <label for="filter-price">
+                        Цена до, руб.:
+                        <input type="number" id="filter-price" placeholder="50000">
+                    </label>
+
+                    <button type="submit" class="btn">Применить</button>
+                </form>
+            </section>
+
+            <!-- Список товаров -->
+            <section>
+                <div class="grid">
+
+                    <section>
+                        <div class="grid" id="tv-list">
+                            <!-- Карточки будут добавлены через JavaScript -->
+                        </div>
+                    </section>
+
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 ЭкранПро. Все права защищены.</p>
+            <p>Телефон: +7 (***) ***-**-**</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

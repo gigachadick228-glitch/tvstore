@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.env
+tvstore.db
+.vs/
+.DS_Store
